@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.outer-box{
+    width: 100vw;
+    height:100vh;
+    background: linear-gradient(to top left,rgba(23, 87, 65, 0.922),rgb(131, 245, 194));
+}
+.inner-box{
+    width:350px;
+    margin: 0 auto;
+    position:relative;
+    top: 45%;
+    transform: translateY(-50%);
+    padding: 20px 40px;
+    background-color: black;
+    backdrop-filter: blur(8px);
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px #0b5245;
+    color: white;
+}
+.login-header h1{
+    font-size:2.5rem;
+    text-align:center;
+}
+.login-body
+{
+    margin: 15px 0;
+}
+.login-body p{
+    margin-top:2px;
+    font-size:1.1rem;
+}
+#F1{
+    color:#229a76;
+    margin-top: 10px;
+}
+.login-body p label{
+    display: block;
+    margin-top:15px;
+    font-weight: bold;
+}
+.login-body p input{
+    background-color: black;
+    color:white;
+    width:100%;
+    padding: 5px;
+    border:2px solid #cccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-top:30px;
+}
+.login-body p input[type="submit"]{
+    background-color: rgb(42, 182, 131);
+    border:none;
+    color:white;
+    cursor:pointer;
+    margin-top:30px;
+}
+.login-body p input[type="submit"]:hover{
+    background-color: rgb(20, 105, 82);
+}
+.login-footer p{
+    margin-top: 40px;
+    color:#747474;
+    text-align: center;
+}
+.login-footer p a{
+    color:rgb(30, 121, 98);
+}
+@media (max-width: 768px) {
+    #outer-box{
+        flex-direction: column;
+        display: flex;
+        width: 100%;
+        border-right: none;
+        padding: 0;
+    }
+    #inner-box{
+        flex-direction: column;
+        display: flex;
+        width: 100%;
+        border-right: none;
+        padding: 0;
+    }
+}
